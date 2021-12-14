@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+ 
+
+
+  <div  >
+    <div class="time" *ngIf="(marks==0)">
+  
+      <app-time></app-time>
+      
+    </div>
+  
+   
+    <form #paperForm="ngForm" id="fm"  (ngSubmit)="onSubmit(paperForm)" > 
+     <div *ngIf="marks==0&& (countnum<11)"> 
+      <div class="form-group">
+      <h1> <label><span>{{question.id}} )</span> {{question.question}}</label><br></h1> 
+        <input type="radio" name="answer" value="A" ngModel   [checked]="arr[question.id-1]==A.value" #A> <label for="input"   >{{question.optionA}}</label> <br>
+        <input type="radio"  name="answer" value="B" ngModel  [checked]="arr[question.id-1]==B.value" #B> <label for="input">{{question.optionB}}</label><br>
+        <input type="radio" name="answer" value="C" ngModel  [checked]="arr[question.id-1]==C.value" #C> <label for="input" >{{question.optionC}}</label><br>
+        <input type="radio" name="answer" value="D" ngModel  [checked]="arr[question.id-1]==D.value" #D> <label for="input" >{{question.optionD}}</label><br> 
+        <!-- <input type="text" class="form-control" id="project_id" [(ngModel)]="" name="projectId" #projectId="ngModel" required [class.is-invalid]="projectId.invalid && projectId.touched">
+      <small class="text-danger" [class.d-none]="projectId.valid || projectId.untouched">Invalid Details</small>
+      -->
+  </div>
+      <br/>
+      <button type="button" *ngIf="!(question.id==1)&&(question.id<=11)"  class="btn btn-warning previous" (click)="preORnex(paperForm,question.id,-1)">previous</button> &nbsp;&nbsp;
+      <input type="button" *ngIf="countnum>0&&countnum<=10"  class="btn btn-primary next" (click)="preORnex(paperForm,question.id,1)" value="next">
+    </div>
+    <div class="submit" *ngIf="countnum>10&&(marks==0)">
+      <h3>please submit your task</h3>
+    <button class="btn btn-success "  type="submit"  >Submit</button> &nbsp;&nbsp;
+  </div>
+    </form>
+
+
+
+  </div>
+  <div *ngIf="marks!==0">
+  
+    <div class="progress" *ngIf="marks<3">
+      <p style="color: rgb(248, 32, 17);";>worst performance</p>
+      <div     class="progress-bar bg-danger " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress" *ngIf="marks<6&&marks>3">
+      <p style="color: rgb(33, 223, 33);";>Average performance</p>
+      <div class="progress-bar  bg-warning " role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress" *ngIf="marks<9&&marks>6">
+      <p style="color: green;";>good performance</p>
+      <div class="progress-bar bg-info " role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress" *ngIf="marks==10">
+      <p style="color: green;";>well done performance</p>
+      <div class="progress-bar bg-success " role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+    <div class="score"> 
+     <img *ngIf="(marks==0)" width="250px" height="250px" src="assets/fail.jfif" alt="">
+     <img *ngIf="marks<5"  width="200px" height="250px" src="assets/bad.jpg" alt="">
+     <img *ngIf="marks>5"  width="250px" height="250px" src="assets/pass.jfif" alt="">
+      <h1  > you have scored {{marks}}</h1>
+<input class="progress-bar bg-success " type="button" name="" id="" value="signout">
+    </div>
+
+
+
+
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+{
+"questions":[
+
+{"id":1,
+"question":"what is syntax for interpolation ?.",
+"optionA":"{}",
+"optionB":"[{}]",
+"optionC":"{{}}",
+"optionD":"({})"
+
+},
+{"id":2,
+    "question":"Which of the following is correct about TypeScript?",
+    "optionA":"Angular is based on TypeScript.",
+    "optionB":"This is a superset of JavaScript",
+    "optionC":"TypeScript is maintained by Microsoft",
+    "optionD":"All of the above."
+    
+    },
+    {"id":3,
+        "question":"What is .subscribe?",
+        "optionA":"Streams data in asynchronously",
+        "optionB":"Streams data in synchronously",
+        "optionC":"Both",
+        "optionD":"None of above"
+        
+        },
+        {"id":4,
+            "question":" What does AOT stand for?",
+            "optionA":"Ahead-Of-Time Compilation",
+            "optionB":"Angular Object Templates",
+            "optionC":"Both",
+            "optionD":"None of above"
+            
+            },
+            {"id":5,
+                "question":"Which of the following is not a hook application life cycle?",
+                "optionA":"ngOnChanges",
+                "optionB":"ngViewStart",
+                "optionC":"ngOnInit",
+                "optionD":"None of the above"
+                
+                },
+                {"id":6,
+                    "question":" Router is part of which of the following module?",
+                    "optionA":" @angular/core",
+                    "optionB":"@angular/router",
+                    "optionC":"Both",
+                    "optionD":"None of the above"
+                    
+                    },
+                    {"id":7,
+                        "question":"RxJS can be used for?",
+                        "optionA":"Browser",
+                        "optionB":"Server Side",
+                        "optionC":"Both",
+                        "optionD":"None of the above"
+                        
+                        },
+                        {"id":8,
+                            "question":"decorator intialize with?",
+                            "optionA":"@",
+                            "optionB":"#",
+                            "optionC":"decorator",
+                            "optionD":"*"
+                            
+                            },
+                            {"id":9,
+                                "question":"What is the decorator used for configuring your module class?",
+                                "optionA":"@NgModule",
+                                "optionB":"@NgApp",
+                                "optionC":"Both",
+                                "optionD":"None of the above"
+                                
+                                },
+                                {"id":10,
+                                    "question":"Which file is responsible for startup of angular 2 project ?",
+                                    "optionA":"main.ts",
+                                    "optionB":"index.js",
+                                    "optionC":" app.ts",
+                                    "optionD":"angular.cli.json"
+                                    
+                                    }
+
+        
+
+
+]
+
+}

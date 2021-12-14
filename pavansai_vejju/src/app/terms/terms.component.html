@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    
+
+    <div class="container" >
+        <div *ngIf="logged" >
+            <h3>PLEASE REFER the FOLLOWING DETAILS REGARDING YOUR ONLINE EXAM.:</h3>
+            
+            <article>
+                1) We have tested all the Login Keys before sending it. Avoid any login key typing mistake like- Don't use extra space before or after key, check Upper Case or Lower Case letters, Special Characters etc...
+            <br>
+            2) After successful online paper submission, your result will be displayed on the screen. After Finishing the exam, take a screenshot or photograph of result page and apply with below links for result confirmation.
+            
+            If a student passes the exam, then apply through the following link - http://www.dlc.co.in/form/view.php?id=28 . 
+            
+            If a student is failed in the exam, then apply through the following link -  http://www.dlc.co.in/form/view.php?id=9
+            <br>
+            3) Login Key is activated for single attempt. If you face any difficulty inform us without any delay.
+            <br>
+            4) Always check your alternate / secondary or all email id's for more details.
+            <br>
+            5) Always check SPAM / JUNK / BULK folder etc. To avoid this always save our emails id in your contact white list i.e. exam@forensic.co.in, support@forensic.co.in , contact@forensic.co.in , exam@ifs.edu.in etc.
+            <br>
+            </article>
+            
+                <input type="button"  class="btn btn-success startbutton" value="start" routerLink="paper">
+            
+           
+            </div>
+
+        <div class="screen" >
+            <div class="screen__content" >
+       
+                <form class="login" *ngIf="!logged" >
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="Full name " name="username" [(ngModel)]="username">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                       
+                        <input type="password" class="login__input" placeholder="Email"  name="usermail"[(ngModel)]="usermail">
+                    </div>
+                    <button class="button login__submit">
+                        <span class="button__text"  (click)="login()">Log In Now</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>				
+                </form>
+                <div class="social-login">
+                    <div class="social-icons">
+                        <a href="#" class="social-login__icon fab fa-instagram"></a>
+                        <a href="#" class="social-login__icon fab fa-facebook"></a>
+                        <a href="#" class="social-login__icon fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+    
+    
+    
+    
+
+    
+    
+    
+</body>
+</html>
