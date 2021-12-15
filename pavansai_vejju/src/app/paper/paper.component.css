@@ -29,12 +29,17 @@ body{
 
 } 
 .time{
-    color: purple;
+    color: rgb(255, 248, 255);
     padding: 10px;
     position: fixed;
     right: 40px;
-    border: 1px solid purple;
-    width: 300px;
+    top: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    padding-left: 50px;
+    padding-top: 80px;
+    clip-path: circle(50% at 50% 50%);
 }
 .submit{
     position: absolute;

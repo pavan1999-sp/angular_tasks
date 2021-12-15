@@ -15,7 +15,7 @@ timeup=false
   timer(){
     if(this.sec==0){
      this.sec=60;
-     this.min=-1;
+     this.min= this.min-1;
     }
     else{
       this.sec=this.sec-1
@@ -31,7 +31,7 @@ this.timeup=true;
 
     setInterval(()=>{
        this.timer()
-      }, 1000);
+      }, 100);
 
 
 
