@@ -1,0 +1,12 @@
+.card{
+    text-align: left;
+    justify-self: center;
+    margin-top: 50px;
+    box-shadow: 3px;
+    background-color: bisque;
+}
+body{
+    background-color: RGB(247, 202, 201);
+    height: 1000px;
+    width: auto;
+}
