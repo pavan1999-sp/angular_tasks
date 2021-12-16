@@ -1,27 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-time',
-  templateUrl: './time.component.html',
-  styleUrls: ['./time.component.css']
+  selector: 'app-calculatepage',
+  templateUrl: './calculatepage.component.html',
+  styleUrls: ['./calculatepage.component.css']
 })
-export class TimeComponent implements OnInit {
-  time = 60;
+export class CalculatepageComponent implements OnInit {
   min = 4;
   sec = 60;
-  timeup = false
+  timeover = false
   constructor() { }
 
   timer() {
     if (this.sec == 0) {
       this.sec = 60;
-      this.min = -1;
+      this.min= this.min-1;
     }
     else {
-      this.sec = this.sec - 1
+      this.sec = this.sec-1
     }
     if (this.min == 0 && this.sec == 0) {
-      this.timeup = true;
+      this.timeover = true;
     }
   }
   ngOnInit(): void {
