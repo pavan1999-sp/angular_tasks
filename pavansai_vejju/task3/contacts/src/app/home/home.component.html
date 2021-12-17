@@ -1,0 +1,27 @@
+<h1>contact manager</h1>
+<table class="table container" *ngIf="!selecteddata" >
+    
+    <!-- <thead> -->
+        <tbody>
+      <tr >
+        <td scope="col"><h1>contact list </h1></td>
+        <td scope="col"><button type="button" class="btn btn-primary" routerLink="listform">Add contact</button></td>
+      
+      </tr>
+      
+
+    <!-- </thead> -->
+<input class="search" type="search" value="">search
+   
+      <tr *ngFor="let x of Manager_Lits">
+        <th  scope="row"><h4>{{x.Manager_name}}</h4> <small>{{x.mail_id}}</small></th>
+        <td ><img src="/assets/pencil-square.svg" alt="" (click)="edit(x)"> &nbsp;<img src="/assets/trash-fill.svg" alt="" (click)="deletmanager(x)" ></td>
+     
+
+      </tr>
+    </tbody>
+  </table>
+  
+  <div *ngIf="selecteddata" >
+    <app-formcmp [parentData]="selecteddata" ></app-formcmp>
+  </div>

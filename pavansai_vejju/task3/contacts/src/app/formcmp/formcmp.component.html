@@ -1,0 +1,15 @@
+<form #listform="ngForm"  class="container"  (ngSubmit)="onsubmit()">
+<!-- {{listform.value | json}} -->
+    <div class="form-group"   >
+        <label> Name</label>
+        <input type="text" class="form-control" id="Manager_Name" [(ngModel)]="manager.Manager_name" name="Manager_Name" #Manager_Name="ngModel" required [class.is-invalid]="Manager_Name.invalid && Manager_Name.touched">
+      <small class="text-danger" [class.d-none]="Manager_Name.valid || Manager_Name.untouched">Enter Name</small>
+      </div>
+
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="text" class="form-control" id="Manager_Mail" [(ngModel)]="manager.mail_id" name="Manager_Mail" #Manager_Mail="ngModel" required [class.is-invalid]="Manager_Mail.invalid && Manager_Mail.touched">
+      <small class="text-danger" [class.d-none]="Manager_Mail.valid || Manager_Mail.untouched">Enter Mail Id</small>
+      </div> <br>
+<button  class="btn btn-success" [disabled]="!listform.valid" type="submit">Submit</button>
+</form>

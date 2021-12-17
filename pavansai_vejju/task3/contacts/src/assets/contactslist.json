@@ -1,0 +1,24 @@
+{
+  "managers": [
+    {
+      "id": 3,
+      "Manager_name": "james",
+      "mail_id": "james@techwave.com"
+    },
+    {
+      "id": 4,
+      "Manager_name": "albert",
+      "mail_id": "albert@techwave.com"
+    },
+    {
+      "Manager_name": "pavan",
+      "mail_id": "pavan@techwave.net",
+      "id": 5
+    },
+    {
+      "Manager_name": "prakash",
+      "mail_id": "prakash@techwave.com",
+      "id": 7
+    }
+  ]
+}

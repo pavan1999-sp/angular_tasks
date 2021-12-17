@@ -1,0 +1,22 @@
+.container{
+    width: 600px;
+    /* border: 1px solid rgb(145, 148, 148); */
+    
+}
+small{
+    color: rgb(0, 102, 255);
+}
+h4{
+    color: maroon;
+}
+img{
+    width: 30px;
+    margin: 10%;
+}
+h1{
+    text-align: center;
+}
+.search{
+    width: 400px;
+    margin: 2%;
+}
