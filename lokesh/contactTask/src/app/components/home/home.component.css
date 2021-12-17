@@ -1,19 +1,22 @@
-*{
-    border: none;
-}
-
-p {
-    color: #323232;
+a:first-of-type {
+    text-decoration: none;
     font-size: larger;
-    font-family: sans-serif;
-    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: blueviolet;
+    margin-right: 20%
 }
 
-.imageDiv {
-    height: 100%;
+a {
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: brown;
 }
 
-.imageDiv img {
-    position: inherit;
-    height: calc(100%);
+a:hover{
+    color: black;
+    width: fit-content;
+    text-decoration: 1px solid violet underline;
 }

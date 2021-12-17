@@ -1,16 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddContactComponent } from './components/add-contact/add-contact.component';
+import { DisplayContactsComponent } from './components/display-contacts/display-contacts.component';
 import { HomeComponent } from './components/home/home.component';
+import { NoContactsComponent } from './components/no-contacts/no-contacts.component';
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
-  },
-  {
-    path:"addContact",
-    component:AddContactComponent
+    component: HomeComponent,
+    children: [
+      {
+        path:"",
+        component: DisplayContactsComponent
+      },
+      {
+        path: "addContact",
+        component: AddContactComponent
+      }
+    ]
   }
 ];
 

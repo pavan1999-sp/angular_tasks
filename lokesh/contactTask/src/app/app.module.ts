@@ -8,13 +8,19 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule } from "@angular/common/http";
 import { AddContactComponent } from './components/add-contact/add-contact.component';
+import { NoContactsComponent } from './components/no-contacts/no-contacts.component';
+import { DisplayContactsComponent } from './components/display-contacts/display-contacts.component';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    AddContactComponent
+    AddContactComponent,
+    NoContactsComponent,
+    DisplayContactsComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

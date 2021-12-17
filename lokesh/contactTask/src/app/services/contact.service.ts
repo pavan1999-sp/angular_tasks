@@ -15,4 +15,16 @@ export class ContactService {
     return this._HTTP.get<any[]>(this._URL)
   }
 
+  postContact(data:any):Observable<any> {
+    return this._HTTP.post(this._URL,data)
+  }
+
+  putContact(data:any):Observable<any> {
+    return this._HTTP.put(this._URL+data.id,data)
+  }
+
+  deleteContact(id:number):Observable<any> {
+    return this._HTTP.delete(this._URL+id)
+  }
+
 }
