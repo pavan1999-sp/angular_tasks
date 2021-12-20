@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { IContact } from 'src/app/interfaces/contact';
 import { ContactService } from 'src/app/services/contact.service';
 
 @Component({
@@ -11,8 +12,16 @@ export class DisplayContactsComponent implements OnInit {
 
   constructor(private _CS:ContactService, private route:Router) { }
 
-  public contacts:any[] = [];
-  public editObj:any = {}
+  public contacts:IContact[] = [];
+  public editObj:IContact = {
+    id: 0 ,
+    firstname: "",
+    lastname: "",
+    image: "",
+    text: "",
+    email: ""
+  }
+  
   public searchKeyWord:string = ""
 
   ngOnInit(): void {

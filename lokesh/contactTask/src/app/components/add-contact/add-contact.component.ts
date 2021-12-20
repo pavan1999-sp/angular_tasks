@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { IBackgroundStyle } from 'src/app/interfaces/contact';
 import { ContactService } from 'src/app/services/contact.service';
 
 @Component({
@@ -11,12 +12,10 @@ export class AddContactComponent {
 
   
   constructor(private _cntSer:ContactService, private route:Router) { }
-  
-  
-  public imagePath:any;
-  public src:any
+
+  public src: string | ArrayBuffer | null = ""
   public message: string = "";
-  backGroundStyle = {
+  backGroundStyle:IBackgroundStyle = {
     backgroundImage: ''
   }
  
@@ -32,7 +31,6 @@ export class AddContactComponent {
     else  this.message = ""
  
     var reader = new FileReader();
-    this.imagePath = files;
     reader.readAsDataURL(files[0]); 
     reader.onload = (_event) => { 
       this.src = reader.result; 
