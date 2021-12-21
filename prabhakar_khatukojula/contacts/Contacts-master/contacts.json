@@ -1,0 +1,32 @@
+{
+  "contacts": [
+    {
+      "id": 2,
+      "name": "Victor Von Doom Phd",
+      "number": "+1 (555) 123-4567",
+      "label": "Home",
+      "email": "DrDoom@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Flash Thompson",
+      "number": "+1 (555) 435-1261",
+      "label": "Work",
+      "email": "flashy@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Curtis Connors",
+      "number": "+1 (555) 992-1567",
+      "label": "Mobile",
+      "email": "ConmanCurtis@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Billy Russo",
+      "number": "+1 (555) 234-1516",
+      "label": "Mobile",
+      "email": "russotheBilly@gmail.com"
+    }
+  ]
+}
