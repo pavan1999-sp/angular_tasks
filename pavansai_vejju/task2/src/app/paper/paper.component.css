@@ -1,0 +1,52 @@
+.card-body{
+    width: auto;
+    padding: 1%;
+    height: auto;
+    margin: 5%;
+    overflow: hidden;
+}
+.form-group{
+    padding: 5%;
+}
+label{
+    padding: 2%;
+}
+.next{
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+.previous{
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+.paper-header{
+    background-color: blueviolet;
+    padding: 2%;
+  
+}
+body{
+    overflow: hidden;
+
+} 
+.time{
+    color: rgb(255, 248, 255);
+    padding: 10px;
+    position: fixed;
+    right: 40px;
+    top: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    padding-left: 50px;
+    padding-top: 80px;
+    clip-path: circle(50% at 50% 50%);
+}
+.submit{
+    position: absolute;
+    bottom: 50%; 
+    margin-left: 40%;}
+.score{
+    position: absolute;
+    bottom: 40%; 
+    margin-left: 45%;
+}
